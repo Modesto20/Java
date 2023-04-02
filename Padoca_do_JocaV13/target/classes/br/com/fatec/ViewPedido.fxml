@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #fff5c8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewPedidoController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="570.0" text="Pedidos">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="154.0" text="Cliente:" />
+      <Label layoutX="14.0" layoutY="198.0" text="Escolha um produto:" />
+      <Label layoutX="14.0" layoutY="339.0" text="Valor unitário:" />
+      <Label layoutX="14.0" layoutY="295.0" text="Quantidade:" />
+      <Label layoutX="14.0" layoutY="384.0" text="SubTotal:" />
+      <TextField fx:id="txt_cliente" layoutX="166.0" layoutY="149.0" prefHeight="31.0" prefWidth="420.0" />
+      <TextField fx:id="txt_qtde" layoutX="166.0" layoutY="290.0" prefHeight="31.0" prefWidth="82.0" />
+      <TextField fx:id="txt_unit" layoutX="166.0" layoutY="334.0" prefHeight="31.0" prefWidth="137.0" promptText="R$" />
+      <TextField fx:id="txt_subtotal" layoutX="166.0" layoutY="379.0" prefHeight="31.0" prefWidth="137.0" promptText="R$" />
+      <ComboBox fx:id="cmb_produto" layoutX="166.0" layoutY="193.0" prefHeight="31.0" prefWidth="420.0" />
+      <Label layoutX="15.0" layoutY="71.0" text="ID do pedido:" />
+      <TextField fx:id="txt_id" layoutX="166.0" layoutY="66.0" prefHeight="31.0" prefWidth="82.0" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="436.0" prefHeight="100.0" prefWidth="570.0">
+         <children>
+            <Button fx:id="btn_incluir" mnemonicParsing="false" onAction="#btnIncluir_Click" style="-fx-background-color: #f8e5bc;" text="Incluir">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_alterar" mnemonicParsing="false" onAction="#btnAlterar_Click" style="-fx-background-color: #f8e5bc;" text="Alterar">
+               <HBox.margin>
+                  <Insets right="35.0" />
+               </HBox.margin></Button>
+            <Button fx:id="btn_remover" mnemonicParsing="false" onAction="#btnRemover_Click" style="-fx-background-color: #f8e5bc;" text="Remover">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_menu" mnemonicParsing="false" onAction="#btnMenu_Click" style="-fx-background-color: #f8e5bc;" text="Menu">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btn_pesquisar" layoutX="267.0" layoutY="66.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="31.0" prefWidth="319.0" style="-fx-background-color: #f8e5bc;" text="Pesquisar" />
+      <Label layoutX="16.0" layoutY="249.0" text="ID do produto:" />
+      <TextField fx:id="txt_productid" layoutX="166.0" layoutY="244.0" prefHeight="31.0" prefWidth="82.0" />
+      <Label layoutX="15.0" layoutY="111.0" text="CPF:" />
+      <TextField fx:id="txt_cpf" alignment="CENTER" layoutX="166.0" layoutY="106.0" prefHeight="31.0" prefWidth="160.0" promptText="xxx.xxx.xxx-xx" />
+   </children>
+</AnchorPane>

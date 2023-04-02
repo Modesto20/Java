@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="340.0" prefWidth="600.0" style="-fx-background-color: #fff5c8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewEnderecoController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="570.0" text="Endereços (Registro)">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="190.0" text="Cidade:" />
+      <Label layoutX="14.0" layoutY="152.0" text="Bairro:" />
+      <Label layoutX="272.0" layoutY="73.0" text="UF:" />
+      <Label layoutX="14.0" layoutY="113.0" text="Rua:" />
+      <Label layoutX="14.0" layoutY="73.0" text="CEP:" />
+      <TextField fx:id="txt_cep" alignment="CENTER" layoutX="113.0" layoutY="68.0" prefHeight="31.0" prefWidth="145.0" promptText="xxxxx-xxx" />
+      <TextField fx:id="txt_rua" layoutX="113.0" layoutY="108.0" prefHeight="31.0" prefWidth="470.0" />
+      <TextField fx:id="txt_bairro" layoutX="113.0" layoutY="147.0" prefHeight="31.0" prefWidth="470.0" />
+      <TextField fx:id="txt_cidade" layoutX="113.0" layoutY="185.0" prefHeight="31.0" prefWidth="470.0" />
+      <TextField fx:id="txt_uf" layoutX="299.0" layoutY="68.0" prefHeight="31.0" prefWidth="65.0" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="237.0" prefHeight="100.0" prefWidth="570.0">
+         <children>
+            <Button fx:id="btn_incluir" mnemonicParsing="false" onAction="#btnIncluir_Click" style="-fx-background-color: #f8e5bc;" text="Incluir">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_alterar" mnemonicParsing="false" onAction="#btnAlterar_Click" style="-fx-background-color: #f8e5bc;" text="Alterar">
+               <HBox.margin>
+                  <Insets right="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_remover" mnemonicParsing="false" onAction="#btnRemover_Click" style="-fx-background-color: #f8e5bc;" text="Remover">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_menu" mnemonicParsing="false" onAction="#btnMenu_Click" style="-fx-background-color: #f8e5bc;" text="Menu">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btn_pesquisar" layoutX="373.0" layoutY="68.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: #f8e5bc;" text="Pesquisar" />
+   </children>
+</AnchorPane>

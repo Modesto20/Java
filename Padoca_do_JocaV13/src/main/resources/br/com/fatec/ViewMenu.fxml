@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="600.0" style="-fx-background-color: #fff5c8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewMenuController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="45.0" prefWidth="575.0" text="Menu - Padoca do Joca">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="100.0" prefHeight="100.0" prefWidth="575.0">
+         <children>
+            <Button fx:id="btn_cliente" mnemonicParsing="false" onAction="#btnCliente_Click" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: #f8e5bc;" text="Cadastro de Clientes">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_endereco" mnemonicParsing="false" onAction="#btnEndereco_Click" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: #f8e5bc;" text="Endereços (Registro)">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="256.0" prefHeight="100.0" prefWidth="575.0">
+         <children>
+            <Button fx:id="btn_pedido" mnemonicParsing="false" onAction="#btnPedido_Click" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #f8e5bc;" text="Pedidos">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_consulta" mnemonicParsing="false" onAction="#btnConsulta_Click" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: #f8e5bc;" text="Consultar Pedidos">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_funcionario" mnemonicParsing="false" onAction="#btnFuncionario_Click" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #f8e5bc;" text="Cadastro de Funcionários">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

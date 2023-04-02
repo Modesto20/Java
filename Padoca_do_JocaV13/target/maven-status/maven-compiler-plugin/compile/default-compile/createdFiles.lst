@@ -1,0 +1,13 @@
+br\com\fatec\DAO\FornecedorDAO.class
+br\com\fatec\DAO\ClienteDAO.class
+br\com\fatec\controllers\ViewClienteController.class
+br\com\fatec\DAO\DAO.class
+br\com\fatec\App.class
+br\com\fatec\controllers\ViewPedidoController.class
+br\com\fatec\DAO\ProdutoDAO.class
+br\com\fatec\model\Fornecedor.class
+br\com\fatec\persistencia\Banco.class
+br\com\fatec\model\Cliente.class
+br\com\fatec\model\Produto.class
+br\com\fatec\model\Funcionario.class
+br\com\fatec\controllers\ViewClienteController$1.class

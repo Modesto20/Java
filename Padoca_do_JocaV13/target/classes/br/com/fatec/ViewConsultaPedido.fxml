@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="1275.0" style="-fx-background-color: #fff5c8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewConsultaPedidoController">
+   <children>
+      <TableView fx:id="tb_pedido" layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="1245.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="103.0" text="ID do Pedido" />
+          <TableColumn fx:id="col_qtde" prefWidth="94.0" text="Quantidade" />
+            <TableColumn fx:id="col_subtotal" prefWidth="101.0" text="Valor Total" />
+            <TableColumn fx:id="col_cliente" minWidth="0.0" prefWidth="351.0" text="Cliente" />
+            <TableColumn fx:id="col_produto" minWidth="0.0" prefWidth="206.0" text="Produto" />
+            <TableColumn fx:id="col_cpf" prefWidth="210.0" text="CPF" />
+            <TableColumn fx:id="col_productid" prefWidth="113.0" text="ID do Produto" />
+            <TableColumn fx:id="col_selecionado" minWidth="0.0" prefWidth="44.0" />
+        </columns>
+      </TableView>
+      <Group fx:id="group_box">
+         <children>
+            <RadioButton fx:id="radio_pudim" layoutX="733.0" layoutY="423.0" mnemonicParsing="false" text="Pudim">
+               <toggleGroup>
+                  <ToggleGroup fx:id="product" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="radio_italiano" layoutX="852.0" layoutY="423.0" mnemonicParsing="false" text="Pão Italiano" toggleGroup="$product" />
+            <RadioButton fx:id="radio_bolo" layoutX="511.0" layoutY="423.0" mnemonicParsing="false" text="Bolo" toggleGroup="$product" />
+            <RadioButton fx:id="radio_queijo" layoutX="1138.0" layoutY="423.0" mnemonicParsing="false" text="Pão de Queijo" toggleGroup="$product" />
+            <RadioButton fx:id="radio_brigadeiro" layoutX="359.0" layoutY="423.0" mnemonicParsing="false" text="Brigadeiro" toggleGroup="$product" />
+            <RadioButton fx:id="radio_torta" layoutX="625.0" layoutY="423.0" mnemonicParsing="false" text="Torta" toggleGroup="$product" />
+            <RadioButton fx:id="radio_france" layoutX="203.0" layoutY="423.0" mnemonicParsing="false" text="Pão Francês" toggleGroup="$product" />
+            <RadioButton fx:id="radio_baguete" layoutX="1007.0" layoutY="423.0" mnemonicParsing="false" text="Baguete" toggleGroup="$product" />
+         </children>
+      </Group>
+      <Button fx:id="btn_filtro" layoutX="14.0" layoutY="418.0" mnemonicParsing="false" onAction="#btnFiltro_Click" style="-fx-background-color: #f8e5bc;" text="Filtrar por produto:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="600.0" style="-fx-background-color: #F8E5BC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewFuncionarioController">
+   <children>
+      <Label layoutX="14.0" layoutY="82.0" text="CPF:" />
+      <Label layoutX="14.0" layoutY="120.0" text="Nome:" />
+      <Label layoutX="14.0" layoutY="159.0" text="Data de admissão:" />
+      <Label layoutX="14.0" layoutY="195.0" text="Cargo:" />
+      <Label layoutX="14.0" layoutY="233.0" text="Data de nascimento:" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="575.0" text="Cadastro de Funcionários (Collection)">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_cpf" alignment="CENTER" layoutX="164.0" layoutY="77.0" prefHeight="31.0" prefWidth="136.0" promptText="xxx.xxx.xxx-xx" />
+      <TextField fx:id="txt_nome" layoutX="164.0" layoutY="115.0" prefHeight="31.0" prefWidth="420.0" />
+      <TextField fx:id="txt_admis" alignment="CENTER" layoutX="164.0" layoutY="154.0" prefHeight="31.0" prefWidth="136.0" promptText="dd/mm/aaaa" />
+      <TextField fx:id="txt_cargo" layoutX="164.0" layoutY="190.0" prefHeight="31.0" prefWidth="300.0" />
+      <TextField fx:id="txt_nasci" alignment="CENTER" layoutX="164.0" layoutY="228.0" prefHeight="31.0" prefWidth="136.0" promptText="dd/mm/aaaa" />
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="346.0" prefHeight="100.0" prefWidth="575.0">
+         <children>
+            <Button fx:id="btn_incluir" mnemonicParsing="false" onAction="#btnIncluir_Click" style="-fx-background-color: #F0C059;" text="Incluir">
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_alterar" mnemonicParsing="false" onAction="#btnAlterar_Click" style="-fx-background-color: #F0C059;" text="Alterar">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_remover" mnemonicParsing="false" onAction="#btnRemover_Click" style="-fx-background-color: #F0C059;" text="Remover">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_menu" mnemonicParsing="false" onAction="#btnMenu_Click" style="-fx-background-color: #F0C059;" text="Menu">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btn_pesquisar" layoutX="313.0" layoutY="77.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="31.0" prefWidth="270.0" style="-fx-background-color: #F0C059;" text="Pesquisar" />
+      <ComboBox fx:id="cmb_funcionario" layoutX="13.0" layoutY="278.0" prefHeight="31.0" prefWidth="575.0" />
+   </children>
+</AnchorPane>

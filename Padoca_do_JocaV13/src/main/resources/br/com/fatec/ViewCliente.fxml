@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="580.0" style="-fx-background-color: #fff5c8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controllers.ViewClienteController">
+   <children>
+      <Label layoutX="11.0" layoutY="71.0" text="CPF:" />
+      <Label layoutX="11.0" layoutY="115.0" text="Nome:" />
+      <Label layoutX="11.0" layoutY="155.0" text="Email:" />
+      <Label layoutX="341.0" layoutY="201.0" text="CEP:" />
+      <Label layoutX="11.0" layoutY="201.0" text="Celular:" />
+      <TextField fx:id="txt_cpf" alignment="CENTER" layoutX="86.0" layoutY="66.0" prefHeight="31.0" prefWidth="153.0" promptText="xxx.xxx.xxx-xx" />
+      <TextField fx:id="txt_nome" layoutX="86.0" layoutY="110.0" prefHeight="31.0" prefWidth="480.0" />
+      <TextField fx:id="txt_email" layoutX="86.0" layoutY="150.0" prefHeight="31.0" prefWidth="480.0" />
+      <TextField fx:id="txt_cel" alignment="CENTER" layoutX="86.0" layoutY="196.0" prefHeight="31.0" prefWidth="235.0" promptText="(xx) xxxxx-xxxx" />
+      <TextField fx:id="txt_cep" alignment="CENTER" layoutX="413.0" layoutY="196.0" prefHeight="31.0" prefWidth="153.0" promptText="xxxxx-xxx" />
+      <Button fx:id="btn_pesquisar" layoutX="261.0" layoutY="66.0" mnemonicParsing="false" onAction="#btnPesquisar_Click" prefHeight="31.0" prefWidth="305.0" style="-fx-background-color: #f8e5bc;" text="Pesquisar" />
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="331.0" prefHeight="69.0" prefWidth="552.0">
+         <children>
+            <Button fx:id="btn_incluir" mnemonicParsing="false" onAction="#btnIncluir_Click" style="-fx-background-color: #f8e5bc;" text="Incluir">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="70.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_alterar" mnemonicParsing="false" onAction="#btnAlterar_Click" style="-fx-background-color: #f8e5bc;" text="Alterar">
+               <HBox.margin>
+                  <Insets right="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_remover" mnemonicParsing="false" onAction="#btnRemover_Click" style="-fx-background-color: #f8e5bc;" text="Remover">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_menu" mnemonicParsing="false" onAction="#btnMenu_Click" style="-fx-background-color: #f8e5bc;" text="Menu">
+               <HBox.margin>
+                  <Insets left="70.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="45.0" prefWidth="552.0" text="Cadastro de Clientes">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="240.0" text="Rua:" />
+      <Label layoutX="341.0" layoutY="240.0" text="Cidade:" />
+      <Label layoutX="11.0" layoutY="284.0" text="Bairro:" />
+      <Label layoutX="459.0" layoutY="284.0" text="UF:" />
+      <TextField fx:id="txt_rua" layoutX="86.0" layoutY="235.0" prefHeight="31.0" prefWidth="235.0" />
+      <TextField fx:id="txt_cidade" layoutX="413.0" layoutY="235.0" prefHeight="31.0" prefWidth="153.0" />
+      <TextField fx:id="txt_bairro" layoutX="86.0" layoutY="279.0" prefHeight="31.0" prefWidth="305.0" />
+      <TextField fx:id="txt_uf" layoutX="507.0" layoutY="279.0" prefHeight="31.0" prefWidth="59.0" />
+   </children>
+</AnchorPane>
